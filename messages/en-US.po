@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Language: en-US\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: components/TopBar/TopBar.tsx:31
+#: components/TopBar/TopBar.tsx:48
+msgctxt "navigation"
+msgid "Dxd1uB"
+msgstr "Shop"
+
+#: components/TopBar/TopBar.tsx:36
+msgctxt "navigation"
+msgid "wGhqrf"
+msgstr "About us"
+
+#: components/TopBar/TopBar.tsx:39
+msgctxt "navigation"
+msgid "V7ZgX7"
+msgstr "Loyalty program"
+
+#: components/TopBar/TopBar.tsx:42
+msgctxt "navigation"
+msgid "iKLgFb"
+msgstr "Hall map"
+
+#: components/TopBar/TopBar.tsx:45
+msgctxt "navigation"
+msgid "NZyhSX"
+msgstr "News"
+
+#: components/TopBar/TopBar.tsx:55
+msgctxt "navigation"
+msgid "brizuL"
+msgstr "Change locale"

@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Language: uk-UA\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: components/TopBar/TopBar.tsx:31
+#: components/TopBar/TopBar.tsx:48
+msgctxt "navigation"
+msgid "Dxd1uB"
+msgstr ""
+
+#: components/TopBar/TopBar.tsx:36
+msgctxt "navigation"
+msgid "wGhqrf"
+msgstr ""
+
+#: components/TopBar/TopBar.tsx:39
+msgctxt "navigation"
+msgid "V7ZgX7"
+msgstr ""
+
+#: components/TopBar/TopBar.tsx:42
+msgctxt "navigation"
+msgid "iKLgFb"
+msgstr ""
+
+#: components/TopBar/TopBar.tsx:45
+msgctxt "navigation"
+msgid "NZyhSX"
+msgstr ""
+
+#: components/TopBar/TopBar.tsx:55
+msgctxt "navigation"
+msgid "brizuL"
+msgstr "Змінити мову"
