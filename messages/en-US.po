@@ -553,29 +553,26 @@ msgstr "Mandrivna Kramnytsia"
 msgid "Footer.policy_title1"
 msgstr "1. General Information"
 
-msgid "Footer.policy_text1_p1"
-msgstr "This Privacy Policy determines the procedure for collecting, storing, processing, and using personal data of users of the \"Mandrivna Kramnytsia\" website and web application."
-
-msgid "Footer.policy_text1_p2"
-msgstr "We adhere to the requirements and principles of GDPR — transparency, security, and data minimization. By using our site, creating an account, and registering in the \"Hermes\" loyalty program, you confirm that you are familiar with this Policy and agree to it."
+msgid "Footer.policy_text1"
+msgstr "This Privacy Policy determines the procedure for collecting, storing, processing, and using the personal data of users of the Mandrivna Kramnytsia website and web application.<br></br><br></br>We adhere to GDPR requirements and principles — transparency, security, and data minimization. By using our site, creating an account, and registering in the Hermes loyalty program, you confirm that you have read and agree to this Policy."
 
 msgid "Footer.policy_title2"
 msgstr "2. What data we collect"
 
 msgid "Footer.policy_text2"
-msgstr "We collect only the data necessary for the operation of the service and the loyalty program:"
+msgstr "We only collect data necessary for the operation of the service and loyalty program:"
 
 msgid "Footer.policy_list2_item1"
-msgstr "Personal information (email address, date of birth, gender)"
+msgstr "Personal information (email, date of birth, gender)"
 
 msgid "Footer.policy_list2_item2"
 msgstr "Name"
 
 msgid "Footer.policy_list2_item3"
-msgstr "Phone number (for registration and authorization via SMS)"
+msgstr "Phone number (for registration and SMS authorization)"
 
 msgid "Footer.policy_list2_item4"
-msgstr "Transaction data and earned miles"
+msgstr "Transaction and accrued miles data"
 
 msgid "Footer.policy_list2_item5"
 msgstr "Loyalty program status data"
@@ -586,11 +583,8 @@ msgstr "Purchase history"
 msgid "Footer.policy_title3"
 msgstr "3. Use of cookies"
 
-msgid "Footer.policy_text3_p1"
-msgstr "Our site uses the minimum necessary cookies to ensure the correct operation of the service and authorization. We do not use advertising or analytical cookies unless you separately agree to them."
-
-msgid "Footer.policy_text3_p2"
-msgstr "Necessary cookies ensure the site's operation and cannot be disabled. These include session cookies (storing temporary technical data — your session ID) and a cookie with a refresh token used to continue your authorized session without re-entering a code from SMS. This cookie is protected and inaccessible to third-party sites."
+msgid "Footer.policy_text3"
+msgstr "Our site uses strictly necessary cookies that ensure the correct operation of the service and authorization. We do not use advertising or analytical cookies unless you explicitly agree to them.<br></br><br></br>Necessary cookies ensure the site's functionality and cannot be disabled. These include session cookies (store temporary technical data — your session ID) and a refresh token cookie used to extend your authorized session without re-entering the SMS code. This cookie is secure and inaccessible to third-party sites."
 
 msgid "Footer.policy_title4"
 msgstr "4. How we use your data"
@@ -599,19 +593,19 @@ msgid "Footer.policy_text4"
 msgstr "Your personal data is used exclusively for:"
 
 msgid "Footer.policy_list4_item1"
-msgstr "registration and authorization in the \"Hermes\" loyalty program;"
+msgstr "registration and authorization in the Hermes loyalty program;"
 
 msgid "Footer.policy_list4_item2"
 msgstr "accrual, storage, and deduction of miles;"
 
 msgid "Footer.policy_list4_item3"
-msgstr "operation of the interactive map of countries and game bonuses;"
+msgstr "operation of the interactive country map and game bonuses;"
 
 msgid "Footer.policy_list4_item4"
 msgstr "processing orders in the web store;"
 
 msgid "Footer.policy_list4_item5"
-msgstr "improving the quality of service and customer support."
+msgstr "improving service quality and customer support."
 
 msgid "Footer.policy_text4_end"
-msgstr "We do not transfer your data to third parties, except when necessary for the operation of technological services (SMS mailing, CRM integration) and only via a secure protocol."
+msgstr "We do not share your data with third parties, except when necessary for the operation of technological services (SMS delivery, simplified admin panel) and only via a secure protocol."
