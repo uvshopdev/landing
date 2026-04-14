@@ -25,7 +25,7 @@ const withNextIntl = createNextIntlPlugin({
 	requestConfig: "./i18n/request.ts",
 	experimental: {
 		srcPath: "./",
-		extract: { sourceLocale: "en-US" },
+		//extract: { sourceLocale: "en-US" },
 		messages: { format: "po", locales: "infer", path: "./messages", precompile: true },
 	},
 });
