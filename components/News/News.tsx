@@ -25,7 +25,7 @@ const News = () => {
   }, [selectedNews, isAllNewsOpen]);
 
   return (
-    <NewsSection>
+    <NewsSection id="news">
       <NewsHeader>
         <NewsTitle>Новини</NewsTitle>
         <SeeAllBtn onClick={() => setIsAllNewsOpen(true)}>

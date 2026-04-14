@@ -124,10 +124,16 @@ const StoreMap = () => {
   };
 
   return (
-    <MapSection>
+    <MapSection id="map">
       <SectionHeader>
         <Title>Мапа залу</Title>
-        <PrimaryButton type="button">Завітати у крамницю</PrimaryButton>
+        <PrimaryButton 
+          href="https://shop.webshining.space/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Завітати у крамницю
+        </PrimaryButton>
       </SectionHeader>
 
       <MapWrapper>

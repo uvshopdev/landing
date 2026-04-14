@@ -79,12 +79,12 @@ export const LangButton = styled.button`
   border-radius: 10px;
   
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   color: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled.a`
   background: ${({ theme }) => theme.colors.primary};
   color: #FFFFFF;
   font-weight: 500;
@@ -94,7 +94,14 @@ export const PrimaryButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
   
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
   &:hover {
     background: ${({ theme }) => theme.colors.primaryLight};
+    color: #FFFFFF;
   }
 `;

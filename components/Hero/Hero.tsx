@@ -17,7 +17,7 @@ import {
 
 const Hero = () => {
   return (
-    <HeroSection>
+    <HeroSection id='hero'>
       <HeroContent>
         <TextBlock>
           <TextContainer>
@@ -32,7 +32,7 @@ const Hero = () => {
               місце, де Поділ знову стає перехрестям світів.
             </Description>
           </TextContainer>
-          <HeroButton type="button">
+          <HeroButton as="a" href="#about" type="button">
             Дізнатися більше
           </HeroButton>
         </TextBlock>

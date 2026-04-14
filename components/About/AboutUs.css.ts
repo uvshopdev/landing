@@ -10,6 +10,7 @@ export const AboutSection = styled.section`
   gap: 40px;
   width: 100%;
   background: #FFFFFF;
+  scroll-margin-top: 20px;
 `;
 
 export const SectionTitle = styled.h2`

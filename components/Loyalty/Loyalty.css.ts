@@ -8,6 +8,7 @@ export const LoyaltySection = styled.section`
   gap: 40px;
   width: 100%;
   background: #FFFFFF;
+  scroll-margin-top: 20px;
 `;
 
 export const SectionHeader = styled.div`
@@ -32,7 +33,7 @@ export const Title = styled.h2`
   margin: 0;
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled.a`
   font-family: var(--font-montserrat), sans-serif;
   background: ${({ theme }) => theme.colors.primary} !important;
   color: #FFFFFF;
@@ -43,6 +44,11 @@ export const PrimaryButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
   
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   &:hover {
     background: ${({ theme }) => theme.colors.primaryLight} !important;
   }

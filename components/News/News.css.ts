@@ -15,6 +15,7 @@ export const NewsSection = styled.section`
   gap: 40px;
   width: 100%;
   box-sizing: border-box;
+  scroll-margin-top: 20px;
 
   @media (max-width: 768px) {
     padding: 40px 20px;

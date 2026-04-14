@@ -16,6 +16,7 @@ export const MapSection = styled.section`
   gap: 40px;
   width: 100%;
   background: #FFFFFF;
+  scroll-margin-top: 20px;
 
   @media (max-width: 768px) {
     padding: 40px 20px;
@@ -44,7 +45,7 @@ export const Title = styled.h2`
   margin: 0;
 `;
 
-export const PrimaryButton = styled.button`
+export const PrimaryButton = styled.a`
   font-family: var(--font-montserrat), sans-serif;
   background: ${({ theme }: { theme: Theme }) => theme.colors.primary} !important;
   color: #FFFFFF;
@@ -54,6 +55,13 @@ export const PrimaryButton = styled.button`
   border: 1px solid ${({ theme }: { theme: Theme }) => theme.colors.primary};
   border-radius: 10px;
   cursor: pointer;
+  
+  /* ДОДАНО: Щоб посилання виглядало як кнопка */
+  text-decoration: none; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   
   &:hover {
     background: ${({ theme }: { theme: Theme }) => theme.colors.primaryLight} !important;

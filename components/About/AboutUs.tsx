@@ -21,7 +21,7 @@ import {
 
 const AboutUs = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <SectionTitle>Про нас</SectionTitle>
       
       <AboutContent>

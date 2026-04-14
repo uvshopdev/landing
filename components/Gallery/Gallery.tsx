@@ -55,7 +55,7 @@ const Gallery = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <GallerySection>
+    <GallerySection id='gallery'>
       <GalleryHeader>
         <GalleryTitle>Фотогалерея</GalleryTitle>
       </GalleryHeader>

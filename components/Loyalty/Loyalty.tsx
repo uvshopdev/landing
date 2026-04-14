@@ -96,10 +96,16 @@ const Loyalty = () => {
   };
 
   return (
-    <LoyaltySection>
+    <LoyaltySection id="loyalty">
       <SectionHeader>
         <Title>Програма лояльності</Title>
-        <PrimaryButton type="button">Стати мандрівником</PrimaryButton>
+        <PrimaryButton
+          href="https://shop.webshining.space/auth?state=%2Fprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Стати мандрівником
+        </PrimaryButton>
       </SectionHeader>
 
       <ContentWrapper>
