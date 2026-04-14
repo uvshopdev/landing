@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		width: 100dvw;
-		height: 100dvh;
+		min-height: 100dvh;
 	}
 
 	input,button {
