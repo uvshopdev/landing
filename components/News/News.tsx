@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { ChevronRight, Clock, Calendar, Eye, Facebook, Send, MessageCircle } from "lucide-react";
-import { newsData, NewsItem } from "../../data/news"; 
+import { useNews, NewsItem } from "../../data/news"; 
 import {
   NewsSection, NewsHeader, NewsTitle, SeeAllBtn, NewsGrid, NewsCard,
   CardImage, CardTitle, CardDesc, CardFooter, DateBadge, ReadMoreBtn,
@@ -12,6 +13,8 @@ import {
 } from "./News.css";
 
 const News = () => {
+  const t = useTranslations("News");
+  const newsData = useNews();
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
   const [isAllNewsOpen, setIsAllNewsOpen] = useState(false);
 
@@ -27,9 +30,9 @@ const News = () => {
   return (
     <NewsSection id="news">
       <NewsHeader>
-        <NewsTitle>Новини</NewsTitle>
+        <NewsTitle>{t("title")}</NewsTitle>
         <SeeAllBtn onClick={() => setIsAllNewsOpen(true)}>
-          Переглянути все <ChevronRight size={16} />
+          {t("see_all")} <ChevronRight size={16} />
         </SeeAllBtn>
       </NewsHeader>
 
@@ -42,7 +45,7 @@ const News = () => {
             <CardFooter>
               <DateBadge>{item.date}</DateBadge>
               <ReadMoreBtn onClick={() => setSelectedNews(item)}>
-                Читати далі <span><ChevronRight size={18} /></span>
+                {t("read_more")} <span><ChevronRight size={18} /></span>
               </ReadMoreBtn>
             </CardFooter>
           </NewsCard>
@@ -53,7 +56,7 @@ const News = () => {
       {selectedNews && (
         <ModalOverlay onClick={() => setSelectedNews(null)}>
           <ModalContent onClick={e => e.stopPropagation()}>
-            <CloseModal onClick={() => setSelectedNews(null)}>&#10005;</CloseModal>
+            <CloseModal onClick={() => setSelectedNews(null)} aria-label={t("close_modal")}>&#10005;</CloseModal>
             
             <LeftColumn>
               <ColumnHeader>
@@ -65,21 +68,21 @@ const News = () => {
                     <MetaBadge><Eye size={20} /> {selectedNews.views}</MetaBadge>
                   </div>
                   <ShareIcons>
-                    <Facebook size={24} style={{ cursor: 'pointer' }} />
-                    <Send size={24} style={{ cursor: 'pointer' }} />
-                    <MessageCircle size={24} style={{ cursor: 'pointer' }} />
+                    <Facebook size={24} style={{ cursor: 'pointer' }} aria-label={t("share_facebook")} />
+                    <Send size={24} style={{ cursor: 'pointer' }} aria-label={t("share_telegram")} />
+                    <MessageCircle size={24} style={{ cursor: 'pointer' }} aria-label={t("share_viber")} />
                   </ShareIcons>
                 </MetaRow>
               </ColumnHeader>
               <ScrollableArea>
                 <FullImage src={selectedNews.image || ""} alt={selectedNews.title} />
-                <FullText>{selectedNews.fullText}</FullText>
+                <FullText style={{ whiteSpace: 'pre-wrap' }}>{selectedNews.fullText}</FullText>
               </ScrollableArea>
             </LeftColumn>
 
             <RightColumn>
               <ColumnHeader>
-                <NewsTitle style={{ fontSize: '28px' }}>Схожі новини</NewsTitle>
+                <NewsTitle style={{ fontSize: '28px' }}>{t("similar_news")}</NewsTitle>
               </ColumnHeader>
               <ScrollableArea>
                 {newsData.filter(n => n.id !== selectedNews.id).map(item => (
@@ -89,7 +92,7 @@ const News = () => {
                      <CardFooter>
                       <DateBadge>{item.date}</DateBadge>
                       <ReadMoreBtn onClick={() => setSelectedNews(item)}>
-                        Читати далі <span><ChevronRight size={18} /></span>
+                        {t("read_more")} <span><ChevronRight size={18} /></span>
                       </ReadMoreBtn>
                     </CardFooter>
                   </NewsCard>
@@ -105,11 +108,11 @@ const News = () => {
       {isAllNewsOpen && (
         <ModalOverlay onClick={() => setIsAllNewsOpen(false)}>
           <ModalContent onClick={e => e.stopPropagation()}>
-            <CloseModal onClick={() => setIsAllNewsOpen(false)}>&#10005;</CloseModal>
+            <CloseModal onClick={() => setIsAllNewsOpen(false)} aria-label={t("close_modal")}>&#10005;</CloseModal>
             
             <LeftColumn style={{ width: '100%', flex: 'none', height: '100%' }}>
               <ColumnHeader>
-                <NewsTitle style={{ fontSize: '34px' }}>Всі новини</NewsTitle>
+                <NewsTitle style={{ fontSize: '34px' }}>{t("all_news")}</NewsTitle>
               </ColumnHeader>
               <ScrollableArea>
                 <NewsGrid>
@@ -121,7 +124,7 @@ const News = () => {
                       <CardFooter>
                         <DateBadge>{item.date}</DateBadge>
                         <ReadMoreBtn onClick={() => { setSelectedNews(item); setIsAllNewsOpen(false); }}>
-                          Читати далі <span><ChevronRight size={18} /></span>
+                          {t("read_more")} <span><ChevronRight size={18} /></span>
                         </ReadMoreBtn>
                       </CardFooter>
                     </NewsCard>

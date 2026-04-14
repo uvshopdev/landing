@@ -3,36 +3,615 @@ msgstr ""
 "Language: en-US\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: next-intl\n"
-"X-Crowdin-SourceKey: msgstr\n"
 
-#: components/TopBar/TopBar.tsx:31
-#: components/TopBar/TopBar.tsx:48
-msgctxt "navigation"
-msgid "Dxd1uB"
-msgstr "Shop"
-
-#: components/TopBar/TopBar.tsx:36
-msgctxt "navigation"
-msgid "wGhqrf"
+msgid "TopBar.about"
 msgstr "About us"
 
-#: components/TopBar/TopBar.tsx:39
-msgctxt "navigation"
-msgid "V7ZgX7"
+msgid "TopBar.loyalty"
 msgstr "Loyalty program"
 
-#: components/TopBar/TopBar.tsx:42
-msgctxt "navigation"
-msgid "iKLgFb"
+msgid "TopBar.map"
 msgstr "Hall map"
 
-#: components/TopBar/TopBar.tsx:45
-msgctxt "navigation"
-msgid "NZyhSX"
+msgid "TopBar.news"
 msgstr "News"
 
-#: components/TopBar/TopBar.tsx:55
-msgctxt "navigation"
-msgid "brizuL"
-msgstr "Change locale"
+msgid "TopBar.shop"
+msgstr "Shop"
+
+msgid "TopBar.become_traveler"
+msgstr "Become a traveler"
+
+msgid "TopBar.home_aria"
+msgstr "Home page"
+
+msgid "TopBar.logo_alt"
+msgstr "Mandrivna Kramnytsia"
+
+msgid "TopBar.change_locale"
+msgstr "Change language"
+
+
+
+msgid "Hero.pre_title"
+msgstr "Mandrivna Kramnytsia"
+
+msgid "Hero.title"
+msgstr "Gastronomic port in the heart of Podil"
+
+msgid "Hero.description"
+msgstr "Under one roof, we have gathered stories from distant shores. Every flavor is a step into a new country, every cup of coffee is a small stop on a traveler's route. Discover "\"Mandrivna Kramnytsia\" — a place where Podil once again becomes a crossroads of the world."
+
+msgid "Hero.button"
+msgstr "Learn more"
+
+msgid "Hero.img_alt"
+msgstr "Gastronomic port"
+
+
+
+msgid "About.title"
+msgstr "About us"
+
+msgid "About.img_alt"
+msgstr "Interior of "\"Mandrivna Kramnytsia\""
+
+msgid "About.history_title"
+msgstr "Beginning of the story"
+
+msgid "About.history_text"
+msgstr ""\"Mandrivna Kramnytsia\" was born in Podil — a place where trade routes and cultures have intersected for centuries. Here, among narrow streets, wooden benches, and the scent of spices, travelers from different parts of the world exchanged not only goods but also stories, flavors, and traditions. This very atmosphere of discovery became the foundation of our brand."
+
+msgid "About.idea_title"
+msgstr "Our idea"
+
+msgid "About.idea_text"
+msgstr "We took the spirit of ancient travels as a basis and brought it into modern times. Our shop is a place where every purchase turns into a small journey, and every product has its own story. Here you can find cheeses from France, spices from the Middle East, chocolate from Spain, or coffee from distant lands — everything that allows you to taste the world."
+
+msgid "About.philosophy_title"
+msgstr "Philosophy"
+
+msgid "About.philosophy_text_p1"
+msgstr "Our philosophy is simple: travel inspires, and every taste can open a new story. We believe that gastronomy is a universal language that connects people, cultures, and times."
+
+msgid "About.philosophy_text_p2"
+msgstr ""\"Mandrivna Kramnytsia\" is not just a place for shopping. It is a port for those looking for new emotions, who love to discover the world and find beauty in small things. We create a space where every visitor feels warmth, attention, and the atmosphere of a real journey."
+
+msgid "About.fact1_title"
+msgstr "10 years"
+
+msgid "About.fact1_text"
+msgstr "For ten years we have been collecting world flavors and conveying the atmosphere of travel in every product"
+
+msgid "About.fact2_title"
+msgstr "40 countries"
+
+msgid "About.fact2_text"
+msgstr "Our goods come from more than forty countries — from family farms to distant cultures"
+
+msgid "About.fact3_title"
+msgstr "1 shop"
+
+msgid "About.fact3_text"
+msgstr "One shop in Podil, but thousands of journeys inside. Each of our guests discovers the world in a new way"
+
+msgid "About.fact4_title"
+msgstr "8000 clients"
+
+msgid "About.fact4_text"
+msgstr "More than eight thousand travelers have already tried our products, receiving warmth, authenticity, and small discoveries"
+
+
+
+msgid "Gallery.title"
+msgstr "Photo Gallery"
+
+msgid "Gallery.alt_1"
+msgstr "Shop interior 1"
+
+msgid "Gallery.alt_2"
+msgstr "Shop interior 2"
+
+msgid "Gallery.alt_3"
+msgstr "Shop interior 3"
+
+msgid "Gallery.prev_label"
+msgstr "Previous photo"
+
+msgid "Gallery.next_label"
+msgstr "Next photo"
+
+msgid "Gallery.dot_label"
+msgstr "Go to photo {index}"
+
+
+
+msgid "Loyalty.title"
+msgstr "Loyalty program"
+
+msgid "Loyalty.button"
+msgstr "Become a traveler"
+
+msgid "Loyalty.gallery_map"
+msgstr "Map of discovered countries"
+
+msgid "Loyalty.gallery_coffee"
+msgstr "Coffee passport"
+
+msgid "Loyalty.gallery_friends"
+msgstr "Inner circle"
+
+msgid "Loyalty.view_image"
+msgstr "View {alt}"
+
+msgid "Loyalty.acc0_title"
+msgstr "Earning miles for every purchase"
+
+msgid "Loyalty.acc0_content"
+msgstr "You can get 1 mile for every 100 UAH from your completed order. Miles are accumulated automatically after registration."
+
+msgid "Loyalty.acc1_title"
+msgstr "Ability to pay with miles"
+
+msgid "Loyalty.acc1_content"
+msgstr "1 mile = 1 UAH. You can always write off part or the entire amount of the purchase."
+
+msgid "Loyalty.acc2_title"
+msgstr "Map of discovered countries and virtual stamps"
+
+msgid "Loyalty.acc2_content"
+msgstr "Buy products from a certain country and open it on your map. Every new country = a stamp + 20 bonus miles."
+
+msgid "Loyalty.acc3_title"
+msgstr "Traveler status levels"
+
+msgid "Loyalty.acc3_desc_top"
+msgstr "The traveler's card has 4 statuses that unlock additional privileges:"
+
+msgid "Loyalty.acc3_lvl1"
+msgstr "Tourist"
+
+msgid "Loyalty.acc3_lvl1_desc"
+msgstr "— start for everyone (up to 50 miles accumulated per year)"
+
+msgid "Loyalty.acc3_lvl2"
+msgstr "Explorer"
+
+msgid "Loyalty.acc3_lvl2_desc"
+msgstr "— 50+ miles per year"
+
+msgid "Loyalty.acc3_lvl3"
+msgstr "Traveler"
+
+msgid "Loyalty.acc3_lvl3_desc"
+msgstr "— 150+ miles per year"
+
+msgid "Loyalty.acc3_lvl4"
+msgstr "Travel Ambassador"
+
+msgid "Loyalty.acc3_lvl4_desc"
+msgstr "— 300+ miles per year"
+
+msgid "Loyalty.acc3_desc_bottom"
+msgstr "The higher the status, the more bonuses, benefits, and personalized offers."
+
+msgid "Loyalty.acc4_title"
+msgstr "Weekly and seasonal bonuses"
+
+msgid "Loyalty.acc4_b1"
+msgstr "Travel Tuesday"
+
+msgid "Loyalty.acc4_b1_desc"
+msgstr "— x2 miles on imported goods every Tuesday"
+
+msgid "Loyalty.acc4_b2"
+msgstr "Country of the month"
+
+msgid "Loyalty.acc4_b2_desc"
+msgstr "— +20% miles for purchasing products of the month"
+
+msgid "Loyalty.acc4_b3"
+msgstr "Seasonal challenges"
+
+msgid "Loyalty.acc4_b3_desc"
+msgstr "— temporary bonuses, thematic promotions, holiday surprises"
+
+msgid "Loyalty.acc5_title"
+msgstr "Inner circle"
+
+msgid "Loyalty.acc5_content"
+msgstr "Invite a friend — get 50 miles and a free coffee after their first purchase."
+
+msgid "Loyalty.acc6_title"
+msgstr "Coffee passport 6 + 1"
+
+msgid "Loyalty.acc6_content"
+msgstr "When buying 6 coffees, the 7th coffee is a gift from us."
+
+
+
+msgid "Map.title"
+msgstr "Hall Map"
+
+msgid "Map.button"
+msgstr "Visit the store"
+
+msgid "Map.map_alt"
+msgstr "Hall plan"
+
+msgid "Map.show_zone"
+msgstr "Show zone"
+
+msgid "Map.item_1"
+msgstr "1. Dairy products"
+
+msgid "Map.item_2"
+msgstr "2. Mayonnaise and eggs"
+
+msgid "Map.item_3"
+msgstr "3. Seafood"
+
+msgid "Map.item_4"
+msgstr "4. Meat"
+
+msgid "Map.item_5"
+msgstr "5. Cheeses and sausages"
+
+msgid "Map.item_6"
+msgstr "6. Ready meals from around the world"
+
+msgid "Map.item_7"
+msgstr "7. Cakes and desserts"
+
+msgid "Map.item_8"
+msgstr "8. Frozen products"
+
+msgid "Map.item_9"
+msgstr "9. Confectionery"
+
+msgid "Map.item_10"
+msgstr "10. Beverages"
+
+msgid "Map.item_11"
+msgstr "11. Alcohol"
+
+msgid "Map.item_12"
+msgstr "12. Seasonal non-food items"
+
+msgid "Map.item_13"
+msgstr "13. Foreign products"
+
+msgid "Map.item_14"
+msgstr "14. Household goods"
+
+msgid "Map.item_15"
+msgstr "15. Craft products"
+
+msgid "Map.item_16"
+msgstr "16. Groceries"
+
+msgid "Map.item_17"
+msgstr "17. Pastries"
+
+msgid "Map.item_18"
+msgstr "18. Bread"
+
+msgid "Map.item_19"
+msgstr "19. Healthy eating"
+
+msgid "Map.item_20"
+msgstr "20. Tea and coffee"
+
+msgid "Map.item_21"
+msgstr "21. Pasta, flour, cereals"
+
+msgid "Map.item_22"
+msgstr "22. \"Country of the month\" stand"
+
+msgid "Map.item_23"
+msgstr "23. Tasting tables"
+
+msgid "Map.item_24"
+msgstr "24. Info center"
+
+msgid "Map.item_25"
+msgstr "25. Self-checkout"
+
+msgid "Map.item_26"
+msgstr "26. Fruits and vegetables"
+
+msgid "Map.item_27"
+msgstr "27. Snacks"
+
+msgid "Map.item_28"
+msgstr "28. Canned goods"
+
+msgid "Map.item_29"
+msgstr "29. Oil"
+
+msgid "Map.item_30"
+msgstr "30. Promotional offers"
+
+msgid "Map.item_31"
+msgstr "31. Interactive zone \"Mandrivna Kramnytsia\""
+
+msgid "Map.item_32"
+msgstr "32. Checkout 4"
+
+msgid "Map.item_33"
+msgstr "33. Checkout 3"
+
+msgid "Map.item_34"
+msgstr "34. Checkout 2"
+
+msgid "Map.item_35"
+msgstr "35. Checkout 1"
+
+msgid "Map.item_36"
+msgstr "36. Exit"
+
+msgid "Map.item_37"
+msgstr "37. Storage area"
+
+msgid "Map.item_38"
+msgstr "38. Exit"
+
+
+
+msgid "News.title"
+msgstr "News"
+
+msgid "News.see_all"
+msgstr "See all"
+
+msgid "News.read_more"
+msgstr "Read more"
+
+msgid "News.similar_news"
+msgstr "Similar news"
+
+msgid "News.all_news"
+msgstr "All news"
+
+msgid "News.close_modal"
+msgstr "Close modal"
+
+msgid "News.share_facebook"
+msgstr "Share on Facebook"
+
+msgid "News.share_telegram"
+msgstr "Share on Telegram"
+
+msgid "News.share_viber"
+msgstr "Share on Viber"
+
+
+
+msgid "NewsData.1_title"
+msgstr "New assortment of Asian products added, over 40 items"
+
+msgid "NewsData.1_short"
+msgstr "Our collection now includes products from Japan, Korea, Vietnam, and Thailand — sauces, noodles, spices, and snacks."
+
+msgid "NewsData.1_full"
+msgstr "Huge restock in our store!\nWe've added a new assortment of Asian products — over 40 unique items that open the door to the vibrant world of Eastern flavors. The collection now features goods from Japan, Korea, Vietnam, and Thailand: aromatic sauces, various noodles, spicy blends, crunchy snacks, and other culinary discoveries that have long conquered global gastronomy.\n\nNow you can find authentic naturally brewed Japanese soy sauce, Korean gochujang paste for spice lovers, and the base for the legendary Thai Tom Yum soup. We carefully selected each producer to guarantee authenticity of taste.\n\nFor those who prefer quick meals, we've brought an entire line of instant rice noodles, potato gnocchi tteokbokki, and crispy nori seaweed chips. All products are already available on the shelves of the foreign gastronomy department.\n\nIn addition to food, we also added a line of authentic tableware. Now you can buy traditional bamboo chopsticks, handmade ceramic ramen bowls, and special carbon steel woks. The right cookware is half the success in preparing pan-Asian dishes, as it allows maintaining the right temperature and preserves the texture of the ingredients.\n\nDon't know where to start? Our consultants have prepared special 'starter kits'. They include everything needed to prepare basic dishes: from perfect sushi rice to the secret ingredients of teriyaki sauce. Such a kit will also make a great gift for friends who love cooking.\n\nIf you've long wanted to try something new or recreate your favorite Asian dishes at home — now is the perfect time. Embark on your own gastronomic journey — follow the link and discover new flavors!"
+
+msgid "NewsData.2_title"
+msgstr "Master class: Secrets of making authentic matcha"
+
+msgid "NewsData.2_short"
+msgstr "Learn everything about the Japanese tea ceremony, its benefits, and the correct brewing proportions."
+
+msgid "NewsData.2_full"
+msgstr "Join our exclusive master class, where our guest tea master will share the secrets of creating the perfect matcha drink. You will learn about the difference between culinary and ceremonial grades, learn how to properly whisk the tea with a bamboo whisk (chasen), and taste traditional Japanese mochi sweets that perfectly complement the taste of the tea.\n\nReal matcha is not just a drink, it's meditation. The leaves for it are shaded a few weeks before harvesting to increase the level of chlorophyll and amino acids, in particular L-theanine. It is this that gives that very state of 'calm tone' for which Buddhist monks so value this tea. Unlike coffee, which gives a sharp spike in energy and an equally sharp decline, matcha releases caffeine gradually over 4-6 hours.\n\nDuring the two-hour event, each participant will receive their own brewing kit and, under the guidance of the master, will try to prepare the drink themselves. We will analyze the most common mistakes: why matcha tastes bitter, what water temperature is ideal (spoiler: never use boiling water!) and how to achieve a thick, stable foam.\n\nA separate part of our meeting will be devoted to storing this delicate product. Did you know that matcha is incredibly sensitive to light, heat, and odors? An opened jar of ceremonial tea is best stored in the refrigerator, tightly closed, so that the powder does not oxidize and does not lose its bright emerald color. We will show you the visual difference between fresh tea and tea that has been stored improperly.\n\nAt the end of the master class, we will also share modern recipes: how to make the perfect iced matcha latte with plant-based milk and how to use the culinary grade for baking muffins and making ice cream.\n\nSeats are limited, so please register in advance at the checkout or via our website. We are waiting for you in the tasting area!"
+
+msgid "NewsData.3_title"
+msgstr "Magic of the Eastern Bazaar: saffron, sumac, and za'atar"
+
+msgid "NewsData.3_short"
+msgstr "Spices that change the perception of familiar dishes. We have collected the most aromatic spices from the markets of Istanbul and Marrakesh."
+
+msgid "NewsData.3_full"
+msgstr "The world of spices awaits you. Learn how to use sumac to add a pleasant acidity to salads, why za'atar is the king of Middle Eastern breakfasts, and how to properly reveal the aroma of real Iranian saffron. Visit our spice department to experience these incredible aromas live.\n\nSaffron is not called 'red gold' for nothing. To get just one kilogram of this spice, you need to hand-pick over 150,000 crocus flowers. Our shop features premium grade saffron (Negin), which is perfect for risotto, paella, or traditional pilaf. Remember the main rule of working with it: never throw dry threads directly into the dish! They must first be ground in a mortar with a pinch of sugar or salt and brewed in warm water or broth.\n\nSumac is the crushed berries of the tree of the same name, which have a pronounced ruby color and a lemon flavor without vinegar harshness. It is indispensable for marinating meat for shish kebab or simply for sprinkling fresh onions for kebabs. And za'atar is an amazing mixture of wild thyme, roasted sesame, sumac, and salt. Mix it with olive oil and dip fresh bread in it — this is the most delicious breakfast in Lebanon!\n\nThe history of trading these spices dates back millennia. Once upon a time, new trade routes were paved for them, and their value exceeded the value of gold. Today we have the luxury of enjoying these gifts of nature every day. We work directly with farmers from Turkey, Iran, and Lebanon to guarantee the absence of any impurities in our blends.\n\nProper storage of spices is another secret to success. Forget about transparent jars over the stove! Spices love darkness, coolness, and tightness. That is why we sell our spices in special tin boxes that reliably protect essential oils from destruction.\n\nOur consultants will be happy to help you assemble the perfect spice set both for everyday meals and culinary experiments. Such a set, by the way, is a fantastic gift for anyone who loves to cook."
+
+msgid "NewsData.4_title"
+msgstr "Autumn update: craft cheeses and Italian wines"
+
+msgid "NewsData.4_short"
+msgstr "Discover the new tastes of autumn with our new collection of craft cheeses and selected wines from Italy."
+
+msgid "NewsData.4_full"
+msgstr "We invite you to taste our new arrivals. This week, aged pecorino, delicate goat cheeses with truffle, and classic Italian gorgonzola have appeared on the shelves. Our sommeliers have already selected the perfect gastronomic pairs for them — from rich Chianti to light and fruity Pinot Grigio.\n\nPay special attention to Parmigiano-Reggiano cheese aged for 36 months. Thanks to such a long maturation, it acquires a crumbly texture with characteristic salt crystals and a rich nutty-fruity aftertaste. It tastes perfect on its own, accompanied by a drop of balsamic vinegar or honey.\n\nAs for wines, we brought several exclusive bottles from small wineries in Piedmont and Tuscany. They are not presented in the mass market and are produced in limited batches. For lovers of sparkling wine, we offer real Franciacorta — the Italian answer to champagne, produced by the classic method of fermentation in the bottle.\n\nVisit our imported gastronomy and wine department — we will gladly organize a mini-tasting for you before purchasing."
+
+msgid "NewsData.5_title"
+msgstr "Exotics on your plates: fresh fruit delivery"
+
+msgid "NewsData.5_short"
+msgstr "Ripe mangoes, sweet pitaya, juicy rambutan, and fresh passion fruit are already waiting for you in our fruit department."
+
+msgid "NewsData.5_full"
+msgstr "We received a new delivery of the freshest exotic fruits straight from Thailand and Colombia. Our 'Yellow' variety mangoes are as sweet as honey, and pitaya (dragon fruit) will impress you not only with its bright appearance but also with its delicate taste. Ideal for healthy breakfasts, smoothie bowls, or simply as a healthy dessert.\n\nHave you ever tasted a real mangosteen? Under its thick purple skin hides juicy white pulp that tastes like a mixture of peach, strawberry, and vanilla. This is a real hit of our new delivery!\n\nIn addition, we brought fresh granadilla, kiwano, and kumquat. Our sellers will gladly tell you how to properly peel and eat each of these unusual fruits. Don't be afraid to experiment — add exotics to your everyday meals, surprise your loved ones, and enjoy vitamins all year round."
+
+msgid "NewsData.6_title"
+msgstr "Grand tasting of extra virgin olive oils"
+
+msgid "NewsData.6_short"
+msgstr "We invite you to a free tasting of premium olive oils from Greece, Spain, and Italy."
+
+msgid "NewsData.6_full"
+msgstr "Do you know how to distinguish real Extra Virgin from a fake? Our experts will talk about acidity, cold-pressing methods, and teach you how to taste oil properly. You will be able to try more than 10 different types of oil combined with freshly baked craft bread.\n\nOlive oil is like wine. Its taste differs radically depending on the olive variety, growing region, and harvest time. Spanish oil from the Arbequina variety will surprise you with notes of green apple and artichoke, while the Greek Koroneiki has a pronounced grassy aroma and a spicy bitterness in the aftertaste.\n\nAt the tasting, we will also talk about the rules for storing oil at home: why it fears light and heat, and whether it can be used for frying (another big myth debunked!). We are waiting for you this weekend from 12:00 to 18:00 in the central hall."
+
+msgid "NewsData.7_title"
+msgstr "Japanese sweets: new flavors of Mochi and Pocky"
+
+msgid "NewsData.7_short"
+msgstr "Expanding the assortment of desserts! Now we have mochi flavored with sakura, salted caramel, and black sesame."
+
+msgid "NewsData.7_full"
+msgstr "For all lovers of Asian sweets — we have a holiday! The shelves have been replenished with the legendary Pocky sticks (including limited seasonal flavors) and incredibly delicate Mochi cakes. This is an ideal option for an unusual gift or a sweet snack with tea.\n\nMochi is a traditional Japanese dessert made from glutinous rice dough, which has a unique chewy texture. Fillings can be very diverse. Our new products deserve special attention: mochi filled with tart matcha tea and delicate mochi with fresh mango cream.\n\nAs for Pocky, we finally received the 'adult' line with double chocolate and almonds, as well as the summer version with coconut flakes. Hurry up, because these flavors fly off the shelves at the speed of light!"
+
+msgid "NewsData.8_title"
+msgstr "Seafood week: discounts up to -20%"
+
+msgid "NewsData.8_short"
+msgstr "Fresh oysters, wild salmon, tiger prawns, and octopuses at special prices."
+
+msgid "NewsData.8_full"
+msgstr "We announce Mediterranean Week! From March 5 to 12, special prices apply to the entire assortment of the fish department. Also, our chefs have prepared free recipes for the perfect seafood paella and secrets of properly baking salmon for you. We are waiting for you!\n\nIf you have long dreamed of cooking an exquisite dinner at home but did not know where to start — we will help you. Our specialists will not only select the best fish but also clean it for free, fillet it, and prepare it for cooking.\n\nThe highlight of this week is fresh Breton oysters and chilled Bluefin tuna fillet, which is perfect for making tartare or carpaccio. Visit us for inspiration and fresh products from the depths of the ocean."
+
+msgid "NewsData.9_title"
+msgstr "Soy sauce guide: how to choose the best one"
+
+msgid "NewsData.9_short"
+msgstr "Dark, light, sweet, or low-sodium? Understanding the types of soy sauce."
+
+msgid "NewsData.9_full"
+msgstr "Choosing a soy sauce can be a daunting task when there are dozens of bottles in front of you. In our new guide article, we tell you which sauce is better suited for marinades, which for sushi, and which should be added to a wok. Read the full guide on our website or ask our store consultants for advice.\n\nThe main rule: a high-quality soy sauce should contain only four ingredients — soybeans, wheat, water, and salt. No dyes, flavorings, or flavor enhancers. It is natural fermentation, lasting from 6 months to several years, that creates that same rich 'umami' flavor.\n\nWe also brought in special gluten-free versions (Tamari) and reduced-sodium sauces for those watching their diet. Come, taste, and find your perfect soy sauce with us."
+
+msgid "NewsData.10_title"
+msgstr "New arrivals: real maple syrup from Canada"
+
+msgid "NewsData.10_short"
+msgstr "The perfect addition to your Sunday crepes and pancakes is already on the shelves."
+
+msgid "NewsData.10_full"
+msgstr "We found the perfect 'Amber, Rich Taste' grade maple syrup. It is produced on a small family farm in Quebec and has a deep, caramel-woody aroma. This syrup contains no artificial additives — only 100% pure maple tree sap.\n\nTo produce one liter of such syrup, you need to evaporate more than 40 liters of maple sap collected in early spring! That is why real maple syrup is such a valuable and healthy product, rich in zinc, manganese, and antioxidants.\n\nIn addition to the traditional use with pancakes and waffles, try adding a spoonful of syrup to your morning coffee, baking vegetables with it (especially pumpkin or carrots), or making a glaze for baking chicken or salmon. This is a versatile ingredient that should be in every kitchen."
+
+msgid "NewsData.11_title"
+msgstr "How to properly cook sushi rice: chef's tips"
+
+msgid "NewsData.11_short"
+msgstr "Revealing the main secrets of perfectly sticky but not overcooked rice for homemade rolls."
+
+msgid "NewsData.11_full"
+msgstr "Many people are afraid to cook sushi at home precisely because of the rice. Our guest chef shared step-by-step instructions: from proper washing to the secret proportions of rice vinegar, sugar, and salt (sushizu). You will find all the necessary ingredients, including special short-grain rice, in our Asian corner.\n\nThe first rule: rice must be washed very delicately, 5-7 times, until the water becomes absolutely transparent. After that, let it rest in the water for about 30 minutes before cooking. The ratio of water to rice should be strictly 1.1 to 1 (slightly more water than rice).\n\nThe most important stage is dressing. Rice vinegar is mixed with sugar and salt, heated (but not boiled!) and carefully, with cutting movements of a wooden spatula, introduced into the still-hot rice. Let it cool to room temperature under a damp towel, and your perfect sushi rice is ready!"
+
+msgid "NewsData.12_title"
+msgstr "Getting ready for picnics: grill and BBQ kits"
+
+msgid "NewsData.12_short"
+msgstr "The season of outdoor recreation is open! We have assembled ready-made boxes with marinated meat, sauces, and vegetables for you."
+
+msgid "NewsData.12_full"
+msgstr "No more spending hours marinating meat and looking for the perfect BBQ sauce. Our culinary experts have prepared ready-made picnic boxes. The set includes: steaks in signature marinade, craft sausages, fresh vegetables, marshmallows for roasting over a fire, and signature sauces.\n\nFor lovers of classics, we offer boxes with pork ribs in honey-mustard sauce, and for those who prefer a lighter menu — tender chicken fillet in yogurt marinade with herbs and kits for grilled vegetables.\n\nEach box is packed in a convenient cooler bag with ice so that your products remain fresh even on the hottest day. Additionally, you can buy eco-friendly charcoal briquettes and natural fire starters from us. Make your weekend tasty and carefree with our store!"
+
+msgid "NewsData.13_title"
+msgstr "Coffee assortment update: fresh roast"
+
+msgid "NewsData.13_short"
+msgstr "Meet new microlots from Ethiopia, Costa Rica, and Guatemala. Flavor profiles from berry to chocolate."
+
+msgid "NewsData.13_full"
+msgstr "Great news for coffee lovers. We have started collaborating with local roasters to guarantee you the highest freshness of beans. Now you can buy 'Specialty' category coffee with a detailed description of the flavor profile, growing altitude, and bean processing method. We grind it for your brewing method for free on the spot!\n\nIf you like a bright acidity and floral notes — we recommend trying washed Ethiopia. For fans of a more familiar, balanced taste with notes of milk chocolate and hazelnut, coffee from Brazil is perfect.\n\nWe have also expanded our range of accessories for alternative brewing: drippers (V60), AeroPresses, filters, and manual coffee grinders. Visit our coffee zone — the barista will gladly prepare an espresso from the new beans for you to taste."
+
+msgid "NewsData.14_title"
+msgstr "Changes in working hours on holidays"
+
+msgid "NewsData.14_short"
+msgstr "Please note the updated schedule of our store during the upcoming holidays."
+
+msgid "NewsData.14_full"
+msgstr "Dear customers! Please note that during the holidays, our store will operate on a changed schedule. On Sunday we will be open from 10:00 to 18:00, and Monday is a day off. Please plan your purchases in advance. We are waiting for you on all other days according to the usual schedule!\n\nTo avoid queues in the pre-New Year period, we recommend making large purchases in the first half of the day or using our 'Click & Collect' service. You can form a cart on the website, and we will collect it by your arrival.\n\nWe also remind you that our delivery service will work in enhanced mode so that all your orders are delivered on time. Thank you for choosing us, and we wish you tasty and joyful holidays with your family!"
+
+
+
+msgid "Footer.description"
+msgstr "\"Mandrivna Kramnytsia\" is a space where gastronomy, history, and the spirit of travel meet. We revive the atmosphere of ancient Podil — a place where international trade routes intersected."
+
+msgid "Footer.contacts_title"
+msgstr "Contacts"
+
+msgid "Footer.nav_title"
+msgstr "Navigation"
+
+msgid "Footer.nav_about"
+msgstr "About us"
+
+msgid "Footer.nav_loyalty"
+msgstr "Loyalty program"
+
+msgid "Footer.nav_map"
+msgstr "Hall map"
+
+msgid "Footer.nav_news"
+msgstr "News"
+
+msgid "Footer.privacy_policy"
+msgstr "Terms and Privacy Policy"
+
+msgid "Footer.copyright"
+msgstr "© 2026 Mandrivna Kramnytsia. All rights reserved"
+
+msgid "Footer.build_route"
+msgstr "Get directions"
+
+msgid "Footer.logo_alt"
+msgstr "Mandrivna Kramnytsia"
+
+
+
+msgid "Footer.policy_title1"
+msgstr "1. General Information"
+
+msgid "Footer.policy_text1_p1"
+msgstr "This Privacy Policy determines the procedure for collecting, storing, processing, and using personal data of users of the \"Mandrivna Kramnytsia\" website and web application."
+
+msgid "Footer.policy_text1_p2"
+msgstr "We adhere to the requirements and principles of GDPR — transparency, security, and data minimization. By using our site, creating an account, and registering in the \"Hermes\" loyalty program, you confirm that you are familiar with this Policy and agree to it."
+
+msgid "Footer.policy_title2"
+msgstr "2. What data we collect"
+
+msgid "Footer.policy_text2"
+msgstr "We collect only the data necessary for the operation of the service and the loyalty program:"
+
+msgid "Footer.policy_list2_item1"
+msgstr "Personal information (email address, date of birth, gender)"
+
+msgid "Footer.policy_list2_item2"
+msgstr "Name"
+
+msgid "Footer.policy_list2_item3"
+msgstr "Phone number (for registration and authorization via SMS)"
+
+msgid "Footer.policy_list2_item4"
+msgstr "Transaction data and earned miles"
+
+msgid "Footer.policy_list2_item5"
+msgstr "Loyalty program status data"
+
+msgid "Footer.policy_list2_item6"
+msgstr "Purchase history"
+
+msgid "Footer.policy_title3"
+msgstr "3. Use of cookies"
+
+msgid "Footer.policy_text3_p1"
+msgstr "Our site uses the minimum necessary cookies to ensure the correct operation of the service and authorization. We do not use advertising or analytical cookies unless you separately agree to them."
+
+msgid "Footer.policy_text3_p2"
+msgstr "Necessary cookies ensure the site's operation and cannot be disabled. These include session cookies (storing temporary technical data — your session ID) and a cookie with a refresh token used to continue your authorized session without re-entering a code from SMS. This cookie is protected and inaccessible to third-party sites."
+
+msgid "Footer.policy_title4"
+msgstr "4. How we use your data"
+
+msgid "Footer.policy_text4"
+msgstr "Your personal data is used exclusively for:"
+
+msgid "Footer.policy_list4_item1"
+msgstr "registration and authorization in the \"Hermes\" loyalty program;"
+
+msgid "Footer.policy_list4_item2"
+msgstr "accrual, storage, and deduction of miles;"
+
+msgid "Footer.policy_list4_item3"
+msgstr "operation of the interactive map of countries and game bonuses;"
+
+msgid "Footer.policy_list4_item4"
+msgstr "processing orders in the web store;"
+
+msgid "Footer.policy_list4_item5"
+msgstr "improving the quality of service and customer support."
+
+msgid "Footer.policy_text4_end"
+msgstr "We do not transfer your data to third parties, except when necessary for the operation of technological services (SMS mailing, CRM integration) and only via a secure protocol."

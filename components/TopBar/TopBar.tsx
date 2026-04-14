@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { useLocale } from "next-intl"; // Тимчасово прибрано useExtracted
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -17,6 +17,7 @@ const TopBar = () => {
     const locale = useLocale() as Locale;
     const [selected, setSelected] = useState<Locale>(locale);
     const [localeActive, setLocaleActive] = useState<boolean>(false);
+    const t = useTranslations("TopBar");
 
     const onChange = async (locale: Locale) => {
         setLocaleActive(false);
@@ -27,39 +28,43 @@ const TopBar = () => {
     const router = useRouter();
 
     const scrollToTop = (e: React.MouseEvent) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    window.history.pushState({}, "", "/");
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.history.pushState({}, "", "/");
     };
 
     return (
         <Content>
             <Bar>
                 <Left>
-                    <Logo href="/" onClick={scrollToTop} aria-label="Головна сторінка">
-						<Image 
-							src="/logo.png" 
-							width={65} 
-							height={48} 
-							alt="Мандрівна крамниця" 
-							priority 
-							style={{ objectFit: 'contain' }} 
-						/>
-					</Logo>
+                    <Logo href="/" onClick={scrollToTop} aria-label={t('home_aria')}>
+                        <Image 
+                            src="/logo.png" 
+                            width={65} 
+                            height={48} 
+                            alt={t('logo_alt')} 
+                            priority 
+                            style={{ objectFit: 'contain' }} 
+                        />
+                    </Logo>
                     <ul>
                         <li>
-                            <Link href="#about">Про нас</Link>
+                            <Link href="#about">{t('about')}</Link>
                         </li>
                         <li>
-                            <Link href="#loyalty">Програма лояльності</Link>
+                            <Link href="#loyalty">{t('loyalty')}</Link>
                         </li>
                         <li>
-                            <Link href="#map">Мапа залу</Link>
+                            <Link href="#map">{t('map')}</Link>
                         </li>
                         <li>
-                            <Link href="#news">Новини</Link>
+                            <Link href="#news">{t('news')}</Link>
                         </li>
-                        <li><Link href="/">Магазин</Link></li>
+                        <li>
+                            <a href="https://shop.webshining.space/" target="_blank" rel="noopener noreferrer">
+                                {t('shop')}
+                            </a>
+                        </li>
                     </ul>
                 </Left>
                 <Right>
@@ -68,12 +73,12 @@ const TopBar = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Стати мандрівником
+                        {t('become_traveler')}
                     </PrimaryButton>
 
                     <LangButton
                         type="button"
-                        aria-label="Змінити мову"
+                        aria-label={t('change_locale')}
                         onClick={() => setLocaleActive(!localeActive)}
                     >
                         {localesDisplay[selected][0]}

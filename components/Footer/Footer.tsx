@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { Mail, Phone, Instagram, Facebook, MessageCircle, Send } from "lucide-react";
 import { 
   FooterWrapper, FooterBody, InfoBlock, FooterLogo, Description, 
@@ -16,6 +17,7 @@ import {
 
 const Footer = () => {
   const [isPolicyOpen, setIsPolicyOpen] = useState(false);
+  const t = useTranslations("Footer");
 
   useEffect(() => {
     if (isPolicyOpen) {
@@ -36,51 +38,49 @@ const Footer = () => {
     <FooterWrapper>
       <FooterBody>
         <InfoBlock>
-          <a href="/" onClick={scrollToTop} aria-label="На головну" style={{ display: 'block', width: 'max-content' }}>
+          <a href="/" onClick={scrollToTop} aria-label={t('logo_alt')} style={{ display: 'block', width: 'max-content' }}>
             <FooterLogo>
-              <Image src="/logo-white.png" fill alt="Мандрівна крамниця" style={{ objectFit: 'contain' }} />
+              <Image src="/logo-white.png" fill alt={t('logo_alt')} style={{ objectFit: 'contain' }} />
             </FooterLogo>
           </a>
           <Description>
-            «Мандрівна крамниця» — це простір, де зустрічаються гастрономія, 
-            історія та дух подорожей. Ми відроджуємо атмосферу давнього Подолу — 
-            місця, де перетиналися міжнародні торгові шляхи.
+            {t('description')}
           </Description>
         </InfoBlock>
 
         <ContactsBlock>
-          <BlockTitle>Контакти</BlockTitle>
+          <BlockTitle>{t('contacts_title')}</BlockTitle>
           <ContactItem><Mail size={16} /> support@gmail.com</ContactItem>
           <ContactItem><Phone size={16} /> +380 XXXXXXXXX</ContactItem>
         </ContactsBlock>
 
         <NavBlock>
-          <BlockTitle>Навігація</BlockTitle>
+          <BlockTitle>{t('nav_title')}</BlockTitle>
           <NavGrid>
-            <a href="#about">Про нас</a>
-            <a href="#loyalty">Програма лояльності</a>
-            <a href="#map">Мапа залу</a>
-            <a href="#news">Новини</a>
+            <a href="#about">{t('nav_about')}</a>
+            <a href="#loyalty">{t('nav_loyalty')}</a>
+            <a href="#map">{t('nav_map')}</a>
+            <a href="#news">{t('nav_news')}</a>
           </NavGrid>
         </NavBlock>
 
         <RightActions>
           <PolicyBtn onClick={() => setIsPolicyOpen(true)}>
-            <span>Умови та Політика конфіденційності</span>
+            <span>{t('privacy_policy')}</span>
             <div>?</div>
           </PolicyBtn>
         </RightActions>
       </FooterBody>
 
       <FooterBottom>
-        <Copyright>© 2026 Мандрівна крамниця. Всі права захищено</Copyright>
+        <Copyright>{t('copyright')}</Copyright>
         <BottomRight>
           <RouteButton 
             href="https://www.google.com/maps/search/?api=1&query=Контрактова+площа,+9,+Київ,+Україна"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Прокласти маршрут
+            {t('build_route')}
           </RouteButton>
           <SocialLinks>
             <Link href="/" aria-label="Instagram"><Instagram size={24} /></Link>
@@ -96,62 +96,52 @@ const Footer = () => {
           <PolicyModalContainer onClick={(e) => e.stopPropagation()}>
             
             <PolicyCloseBtn onClick={() => setIsPolicyOpen(false)}>
-              &#10005;
+              ✕
             </PolicyCloseBtn>
 
             <PolicyModalHeader>
-              <PolicyMainTitle>Умови та Політика конфіденційності</PolicyMainTitle>
+              <PolicyMainTitle>{t('privacy_policy')}</PolicyMainTitle>
             </PolicyModalHeader>
 
             <PolicyScrollArea>
               <PolicySection>
-                <PolicySectionTitle>1. Загальна інформація</PolicySectionTitle>
+                <PolicySectionTitle>{t('policy_title1')}</PolicySectionTitle>
                 <PolicyText>
-                  Ця Політика конфіденційності визначає порядок збору, зберігання, обробки та використання персональних даних користувачів веб-сайту та веб-застосунку «Мандрівна Крамниця».
-                  <br /><br />
-                  Ми дотримуємось вимог та принципів GDPR — прозорості, безпеки та мінімізації даних. Користуючись нашим сайтом, створюючи акаунт та реєструючись у програмі лояльності «Hermes», ви підтверджуєте, що ознайомлені з цією Політикою та погоджуєтесь із нею.
+                  {t.rich('policy_text1', { br: () => <br /> })}
                 </PolicyText>
               </PolicySection>
 
               <PolicySection>
-                <PolicySectionTitle>2. Які дані ми збираємо</PolicySectionTitle>
-                <PolicyText>
-                  Ми збираємо лише ті дані, які необхідні для роботи сервісу та програми лояльності:
-                </PolicyText>
+                <PolicySectionTitle>{t('policy_title2')}</PolicySectionTitle>
+                <PolicyText>{t('policy_text2')}</PolicyText>
                 <PolicyList>
-                  <PolicyListItem>Персональна інформація (електронна адреса, дата народження, гендер)</PolicyListItem>
-                  <PolicyListItem>Ім’я</PolicyListItem>
-                  <PolicyListItem>Номер телефону (для реєстрації та авторизації через SMS)</PolicyListItem>
-                  <PolicyListItem>Дані транзакцій і нарахованих миль</PolicyListItem>
-                  <PolicyListItem>Дані про статус у програмі лояльності</PolicyListItem>
-                  <PolicyListItem>Історію покупок</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item1')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item2')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item3')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item4')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item5')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list2_item6')}</PolicyListItem>
                 </PolicyList>
               </PolicySection>
 
               <PolicySection>
-                <PolicySectionTitle>3. Використання cookies</PolicySectionTitle>
+                <PolicySectionTitle>{t('policy_title3')}</PolicySectionTitle>
                 <PolicyText>
-                  Наш сайт використовує мінімально необхідні cookies, які забезпечують коректну роботу сервісу та авторизації. Ми не використовуємо рекламні чи аналітичні куки, якщо ви окремо не погодитесь на них.
-                  <br /><br />
-                  Необхідні cookies забезпечують роботу сайту та не можуть бути вимкнені. До них належать сесійні куки (зберігають тимчасові технічні дані — ідентифікатор вашої сесії) та кука з рефреш-токеном, що використовується для продовження вашої авторизованої сесії без повторного введення коду з SMS. Ця кука є захищеною та недоступна для сторонніх сайтів.
+                  {t.rich('policy_text3', { br: () => <br /> })}
                 </PolicyText>
               </PolicySection>
 
               <PolicySection>
-                <PolicySectionTitle>4. Як ми використовуємо ваші дані</PolicySectionTitle>
-                <PolicyText>
-                  Ваші персональні дані використовуються виключно для:
-                </PolicyText>
+                <PolicySectionTitle>{t('policy_title4')}</PolicySectionTitle>
+                <PolicyText>{t('policy_text4')}</PolicyText>
                 <PolicyList>
-                  <PolicyListItem>реєстрації та авторизації у програмі лояльності «Hermes»;</PolicyListItem>
-                  <PolicyListItem>нарахування, зберігання та списання миль;</PolicyListItem>
-                  <PolicyListItem>роботи інтерактивної карти країн та ігрових бонусів;</PolicyListItem>
-                  <PolicyListItem>оформлення замовлень у веб-магазині;</PolicyListItem>
-                  <PolicyListItem>покращення якості сервісу та обслуговування клієнтів.</PolicyListItem>
+                  <PolicyListItem>{t('policy_list4_item1')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list4_item2')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list4_item3')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list4_item4')}</PolicyListItem>
+                  <PolicyListItem>{t('policy_list4_item5')}</PolicyListItem>
                 </PolicyList>
-                <PolicyText>
-                  Ми не передаємо ваші дані третім особам, окрім випадків, коли це необхідно для роботи технологічних сервісів (SMS-відправка, CRM-інтеграція) і лише за захищеним протоколом.
-                </PolicyText>
+                <PolicyText>{t('policy_text4_end')}</PolicyText>
               </PolicySection>
             </PolicyScrollArea>
 
