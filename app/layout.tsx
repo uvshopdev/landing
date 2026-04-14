@@ -34,9 +34,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <ServerProviders>
                     <StyledComponentsRegistry>
                         <Providers>
-                            <Main>
+                            <Main style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
                                 <TopBar />
-                                {children}
+                                <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+                                    {children}
+                                </div>
+                                
                                 <Footer />
                             </Main>
                         </Providers>
