@@ -49,7 +49,7 @@ export const PrimaryButton = styled.a`
   font-family: var(--font-montserrat), sans-serif;
   background: ${({ theme }: { theme: Theme }) => theme.colors.primary} !important;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   padding: 10px 20px !important;
   border: 1px solid ${({ theme }: { theme: Theme }) => theme.colors.primary};

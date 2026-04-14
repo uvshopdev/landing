@@ -31,6 +31,7 @@ export const NewsHeader = styled.div`
 
 export const NewsTitle = styled.h2`
   font-family: var(--font-gabriela), serif;
+  font-weight: 400;
   font-size: 34px;
   color: #3B3028;
   margin: 0;
