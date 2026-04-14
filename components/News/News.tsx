@@ -12,6 +12,24 @@ import {
   FullImage, FullText
 } from "./News.css";
 
+// Словник для співставлення ID новини та відповідного фото з папки public/news_photo/
+const newsImages: Record<number, string> = {
+  1: "/news_photo/asian-products-restock.png",
+  2: "/news_photo/matcha-master-class.png",
+  3: "/news_photo/oriental-spices.png",
+  4: "/news_photo/autumn-update.png",
+  5: "/news_photo/exotic-fruit-delivery.png",
+  6: "/news_photo/olive-oil-tasting.png",
+  7: "/news_photo/japanese-sweets-mochi-pocky.png",
+  8: "/news_photo/seafood-discount.png",
+  9: "/news_photo/soy-sauce-guide.png",
+  10: "/news_photo/maple-syrup.png",
+  11: "/news_photo/sushi-rice-tips.png",
+  12: "/news_photo/bbq-kits.png",
+  13: "/news_photo/coffee-roast.png",
+  14: "/news_photo/easter-schedule.png",
+};
+
 const News = () => {
   const t = useTranslations("News");
   const newsData = useNews();
@@ -39,7 +57,7 @@ const News = () => {
       <NewsGrid>
         {newsData.slice(0, 4).map((item) => (
           <NewsCard key={item.id}>
-            <CardImage $src={item.image || ""} />
+            <CardImage $src={newsImages[item.id] || item.image || ""} />
             <CardTitle>{item.title}</CardTitle>
             <CardDesc>{item.shortDesc}</CardDesc>
             <CardFooter>
@@ -75,7 +93,7 @@ const News = () => {
                 </MetaRow>
               </ColumnHeader>
               <ScrollableArea>
-                <FullImage src={selectedNews.image || ""} alt={selectedNews.title} />
+                <FullImage src={newsImages[selectedNews.id] || selectedNews.image || ""} alt={selectedNews.title} />
                 <FullText style={{ whiteSpace: 'pre-wrap' }}>{selectedNews.fullText}</FullText>
               </ScrollableArea>
             </LeftColumn>
@@ -87,7 +105,7 @@ const News = () => {
               <ScrollableArea>
                 {newsData.filter(n => n.id !== selectedNews.id).map(item => (
                   <NewsCard key={item.id} style={{ width: '100%', minWidth: 'auto', maxWidth: 'none' }}>
-                     <CardImage $src={item.image || ""} />
+                     <CardImage $src={newsImages[item.id] || item.image || ""} />
                      <CardTitle>{item.title}</CardTitle>
                      <CardFooter>
                       <DateBadge>{item.date}</DateBadge>
@@ -118,7 +136,7 @@ const News = () => {
                 <NewsGrid>
                   {newsData.map((item) => (
                     <NewsCard key={item.id}>
-                      <CardImage $src={item.image || ""} />
+                      <CardImage $src={newsImages[item.id] || item.image || ""} />
                       <CardTitle>{item.title}</CardTitle>
                       <CardDesc>{item.shortDesc}</CardDesc>
                       <CardFooter>
