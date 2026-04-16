@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { ChevronRight, Clock, Calendar, Eye, Facebook, Send, MessageCircle } from "lucide-react";
+import { ChevronRight, Clock, Calendar, Eye, Facebook, Send, Instagram, Music2 } from "lucide-react";
 import { useNews, NewsItem } from "../../data/news"; 
 import {
   NewsSection, NewsHeader, NewsTitle, SeeAllBtn, NewsGrid, NewsCard,
@@ -86,9 +86,18 @@ const News = () => {
                     <MetaBadge><Eye size={20} /> {selectedNews.views}</MetaBadge>
                   </div>
                   <ShareIcons>
-                    <Facebook size={24} style={{ cursor: 'pointer' }} aria-label={t("share_facebook")} />
-                    <Send size={24} style={{ cursor: 'pointer' }} aria-label={t("share_telegram")} />
-                    <MessageCircle size={24} style={{ cursor: 'pointer' }} aria-label={t("share_viber")} />
+                    <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer" aria-label={t("share_facebook")} style={{ color: 'inherit', display: 'flex' }}>
+                      <Facebook size={24} style={{ cursor: 'pointer' }} />
+                    </a>
+                    <a href="https://www.instagram.com/?hl=uk" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style={{ color: 'inherit', display: 'flex' }}>
+                      <Instagram size={24} style={{ cursor: 'pointer' }} />
+                    </a>
+                    <a href="https://www.tiktok.com/?lang=uk-UA" target="_blank" rel="noopener noreferrer" aria-label="TikTok" style={{ color: 'inherit', display: 'flex' }}>
+                      <Music2 size={24} style={{ cursor: 'pointer' }} />
+                    </a>
+                    <a href="https://telegram.org/?setln=uk" target="_blank" rel="noopener noreferrer" aria-label={t("share_telegram")} style={{ color: 'inherit', display: 'flex' }}>
+                      <Send size={24} style={{ cursor: 'pointer' }} />
+                    </a>
                   </ShareIcons>
                 </MetaRow>
               </ColumnHeader>
