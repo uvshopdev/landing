@@ -38,26 +38,36 @@ export const Description = styled.p`
 `;
 
 export const ContactsBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 `;
 
 export const BlockTitle = styled.h3`
-  font-weight: 700;
-  font-size: 16px;
+	margin: 0;
+	font-weight: 700;
+	font-size: 16px;
+	color: #FFFFFF;
 `;
 
 export const ContactItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 500;
-  font-size: 14px;
-  
-  svg {
-    color: #FFFFFF;
-  }
+	display: flex;
+	align-items: center;
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		transition: opacity 0.2s ease;
+
+		&:hover {
+			opacity: 0.75;
+		}
+	}
 `;
 
 export const NavBlock = styled.div`

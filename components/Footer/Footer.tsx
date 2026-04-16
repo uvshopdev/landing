@@ -49,8 +49,18 @@ const Footer = () => {
 
         <ContactsBlock>
           <BlockTitle>{t('contacts_title')}</BlockTitle>
-          <ContactItem><Mail size={16} /> support@gmail.com</ContactItem>
-          <ContactItem><Phone size={16} /> +380 XXXXXXXXX</ContactItem>
+          <ContactItem>
+            <a href="mailto:support@gmail.com">
+              <Mail size={16} />
+              support@gmail.com
+            </a>
+          </ContactItem>
+          <ContactItem>
+            <a href="tel:+380000000000">
+              <Phone size={16} />
+              +380 XXXXXXXXX
+            </a>
+          </ContactItem>
         </ContactsBlock>
 
         <NavBlock>
