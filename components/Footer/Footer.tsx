@@ -2,9 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Mail, Phone, Instagram, Facebook, MessageCircle, Send } from "lucide-react";
+import { Mail, Phone, Instagram, Facebook, MessageCircle, Send, Music2 } from "lucide-react";
 import { 
   FooterWrapper, FooterBody, InfoBlock, FooterLogo, Description, 
   ContactsBlock, BlockTitle, ContactItem, NavBlock, NavGrid, 
@@ -83,10 +82,21 @@ const Footer = () => {
             {t('build_route')}
           </RouteButton>
           <SocialLinks>
-            <Link href="/" aria-label="Instagram"><Instagram size={24} /></Link>
-            <Link href="/" aria-label="Facebook"><Facebook size={24} /></Link>
-            <Link href="/" aria-label="Viber"><MessageCircle size={24} /></Link>
-            <Link href="/" aria-label="Telegram"><Send size={24} /></Link>
+            <a href="https://www.instagram.com/?hl=uk" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Instagram size={24} />
+            </a>
+            <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <Facebook size={24} />
+            </a>
+            <a href="https://www.tiktok.com/?lang=uk-UA" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <Music2 size={24} />
+            </a>
+            <a href="https://telegram.org/?setln=uk" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <Send size={24} />
+            </a>
+            <a href="https://www.viber.com/ua/" target="_blank" rel="noopener noreferrer" aria-label="Viber">
+              <MessageCircle size={24} />
+            </a>
           </SocialLinks>
         </BottomRight>
       </FooterBottom>
