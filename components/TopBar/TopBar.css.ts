@@ -10,6 +10,10 @@ export const Content = styled.header`
   top: 0;
   z-index: 1000;
   will-change: height;
+
+  @media (max-width: 850px) {
+    padding: 12px 20px;
+  }
 `;
 
 export const Bar = styled.div`
@@ -34,6 +38,10 @@ export const Left = styled.div`
     gap: 0px; 
     align-items: center;
     flex-wrap: nowrap;
+
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   li {
@@ -81,6 +89,10 @@ export const Right = styled.div`
   @media (max-width: 1100px) {
     gap: 15px;
   }
+
+  @media (max-width: 850px) {
+    gap: 10px;
+  }
 `;
 
 export const LangButton = styled.button`
@@ -95,6 +107,12 @@ export const LangButton = styled.button`
   font-size: 14px;
   color: ${({ theme }) => theme.colors.primary};
   cursor: pointer;
+
+  @media (max-width: 850px) {
+    padding: 10px 12px;
+    font-size: 13px;
+    gap: 4px;
+  }
 `;
 
 export const PrimaryButton = styled.a`
@@ -116,6 +134,15 @@ export const PrimaryButton = styled.a`
 
   @media (max-width: 1100px) {
     padding: 10px 15px;
+  }
+
+  @media (max-width: 850px) {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 10px;
   }
 
   &:hover {

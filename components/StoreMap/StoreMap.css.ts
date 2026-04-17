@@ -73,7 +73,39 @@ export const MapWrapper = styled.div`
   background: #F7F3E7;
   border: 3px solid ${({ theme }: { theme: Theme }) => theme.colors.primary};
   border-radius: 20px;
-  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+ &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+    margin: 0 20px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.colors.primary};
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: ${({ theme }) => theme.colors.primaryLight};
+  }
+
+  @media (max-width: 500px) {
+    height: 700px;
+    padding-bottom: 20px;
+  }
 `;
 
 export const MapContainer = styled.div`
@@ -83,6 +115,17 @@ export const MapContainer = styled.div`
   aspect-ratio: 1440 / 788;
   background: #F7F3E7;
   padding-bottom: 100px;
+  flex-shrink: 0;
+
+  transition: transform 0.5s ease;
+
+  @media (max-width: 500px) {
+    width: 820px;
+    height: 1440px;
+    transform: rotate(90deg) scale(0.6); 
+    margin-left: 120px; 
+    transform-origin: center center;
+  }
 `;
 
 export const CoverRect = styled.div<{ $isActive: boolean; $l: string; $r: string; $t: string; $b: string }>`
@@ -124,6 +167,10 @@ export const MapPin = styled.button<{ $isActive: boolean }>`
     transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
+
+  @media (max-width: 500px) {
+    transform: rotate(-90deg);
+  }
 `;
 
 export const Popover = styled.div<{ $direction?: 'top' | 'bottom' | 'left' | 'right' }>`
@@ -131,9 +178,9 @@ export const Popover = styled.div<{ $direction?: 'top' | 'bottom' | 'left' | 'ri
   background: #FFFFFF;
   border: 1px solid #E9E3D9;
   border-radius: 16px;
-  padding: 20px 30px 20px 20px;
-  min-width: 280px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
   z-index: 30;
   display: flex;
   flex-direction: column;
@@ -166,6 +213,14 @@ export const Popover = styled.div<{ $direction?: 'top' | 'bottom' | 'left' | 'ri
     right: 80px; 
     top: -20px;
   `}
+
+  @media (max-width: 500px) {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    bottom: 50px; 
+    left: -110px;
+    width: 200px;
+  }
 `;
 
 export const PopoverClose = styled.button`

@@ -180,9 +180,8 @@ export const ModalContent = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 60px 20px 20px 20px;
-    height: auto;
-    max-height: 90vh;
+    padding: 80px 20px 20px 20px; 
+    height: 95vh;
     overflow-y: auto;
   }
 `;
@@ -200,7 +199,7 @@ export const CloseModal = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 50;
+  z-index: 100;
   transition: opacity 0.2s;
   color: #FFFFFF;
   font-size: 20px;
@@ -217,6 +216,13 @@ export const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  @media (max-width: 1024px) {
+    flex: none;
+    overflow: visible; 
+    width: 100%;
+    height: auto !important; 
+  }
 `;
 
 export const RightColumn = styled.div`
@@ -243,6 +249,26 @@ export const ColumnHeader = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: #FFFFFF;
+
+  @media (max-width: 1024px) {
+    position: sticky;
+    top: -80px; 
+    z-index: 90;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -20px;
+      right: -20px;
+      height: 100px;
+      background: #FFFFFF;
+      z-index: -1;
+    }
+  }
 `;
 
 export const ScrollableArea = styled.div`
@@ -267,6 +293,7 @@ export const ScrollableArea = styled.div`
   @media (max-width: 1024px) {
     overflow-y: visible;
     padding-right: 0;
+    flex: none;
   }
 `;
 
