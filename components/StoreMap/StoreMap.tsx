@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
@@ -26,6 +26,24 @@ const StoreMap = () => {
   const togglePoint = (id: number) => {
     setActivePoint(activePoint === id ? null : id);
   };
+  
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      
+      if (!target.closest('[data-map-interactive="true"]')) {
+        setActivePoint(null);
+      }
+    };
+
+    if (activePoint !== null) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activePoint]);
 
   const mapZones = [
     {

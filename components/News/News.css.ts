@@ -55,7 +55,7 @@ export const SeeAllBtn = styled.button`
 
 export const NewsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 30px;
   width: 100%;
 

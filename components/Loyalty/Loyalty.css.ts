@@ -57,12 +57,13 @@ export const PrimaryButton = styled.a`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 30px;
   width: 100%;
 
   @media (max-width: 1024px) {
     flex-direction: column;
+    align-items: stretch;
   }
 `;
 
@@ -72,6 +73,12 @@ export const GalleryContainer = styled.div`
   gap: 30px;
   flex: 1;
   min-width: 45%;
+  position: sticky; 
+  top: 100px;
+
+  @media (max-width: 1024px) {
+    position: static;
+  }
 `;
 
 export const MainImageWrapper = styled.div`
@@ -79,17 +86,13 @@ export const MainImageWrapper = styled.div`
   width: 100%;
   flex-grow: 1;
   min-height: 400px;
+  aspect-ratio: 4 / 3;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   border-radius: 30px;
-  padding: 30px;
   background: #FFFFFF;
   
   img {
     border-radius: 12px;
-  }
-
-  @media (max-width: 768px) {
-    padding: 15px;
   }
 `;
 
@@ -98,12 +101,11 @@ export const ThumbnailsRow = styled.div`
   flex-direction: row;
   gap: 30px;
   width: 100%;
-  height: 147px;
+  aspect-ratio: 4 / 1;
   flex-shrink: 0;
 
   @media (max-width: 768px) {
     gap: 15px;
-    height: 100px;
   }
 `;
 
@@ -113,7 +115,6 @@ export const ThumbnailWrapper = styled.button<{ $isActive: boolean }>`
   height: 100%;
   border: 1px solid ${({ $isActive, theme }) => ($isActive ? theme.colors.primary : theme.colors.secondary)};
   border-radius: 16px;
-  padding: 16px;
   background: #FFFFFF;
   cursor: pointer;
   transition: border-color 0.3s ease;
@@ -124,10 +125,6 @@ export const ThumbnailWrapper = styled.button<{ $isActive: boolean }>`
 
   &:hover {
     border-color: ${({ theme }) => theme.colors.primary};
-  }
-
-  @media (max-width: 768px) {
-    padding: 8px;
   }
 `;
 

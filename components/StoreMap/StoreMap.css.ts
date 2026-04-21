@@ -56,7 +56,6 @@ export const PrimaryButton = styled.a`
   border-radius: 10px;
   cursor: pointer;
   
-  /* ДОДАНО: Щоб посилання виглядало як кнопка */
   text-decoration: none; 
   display: inline-flex;
   align-items: center;
@@ -118,14 +117,6 @@ export const MapContainer = styled.div`
   flex-shrink: 0;
 
   transition: transform 0.5s ease;
-
-  @media (max-width: 500px) {
-    width: 820px;
-    height: 1440px;
-    transform: rotate(90deg) scale(0.6); 
-    margin-left: 120px; 
-    transform-origin: center center;
-  }
 `;
 
 export const CoverRect = styled.div<{ $isActive: boolean; $l: string; $r: string; $t: string; $b: string }>`
@@ -167,10 +158,6 @@ export const MapPin = styled.button<{ $isActive: boolean }>`
     transform: translate(-50%, -50%) scale(1.1);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
-
-  @media (max-width: 500px) {
-    transform: rotate(-90deg);
-  }
 `;
 
 export const Popover = styled.div<{ $direction?: 'top' | 'bottom' | 'left' | 'right' }>`
@@ -205,20 +192,22 @@ export const Popover = styled.div<{ $direction?: 'top' | 'bottom' | 'left' | 'ri
   `}
 
   ${({ $direction }) => $direction === 'right' && `
-    left: 60px; 
-    top: -30px;
+    left: 45px; 
+    top: 50%;
+    transform: translateY(-50%);
   `}
 
   ${({ $direction }) => $direction === 'left' && `
-    right: 80px; 
-    top: -20px;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
   `}
 
+  @media (max-width: 900px) {
+    width: 220px;
+  }
+
   @media (max-width: 500px) {
-    transform: rotate(-90deg);
-    transform-origin: center;
-    bottom: 50px; 
-    left: -110px;
     width: 200px;
   }
 `;

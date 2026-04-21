@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { ChevronRight, Clock, Calendar, Eye, Facebook, Send, Instagram, Music2 } from "lucide-react";
 import { useNews, NewsItem } from "../../data/news"; 
@@ -36,6 +36,30 @@ const News = () => {
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
   const [isAllNewsOpen, setIsAllNewsOpen] = useState(false);
 
+  const [visibleCardsCount, setVisibleCardsCount] = useState(4);
+
+  const modalContentRef = useRef<HTMLDivElement>(null);
+  const scrollableAreaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width > 1689) {
+        setVisibleCardsCount(4);
+      } else if (width > 1279) {
+        setVisibleCardsCount(3);
+      } else if (width > 869) {
+        setVisibleCardsCount(4);
+      } else {
+        setVisibleCardsCount(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   useEffect(() => {
     if (selectedNews || isAllNewsOpen) {
       document.body.style.overflow = "hidden";
@@ -44,6 +68,24 @@ const News = () => {
     }
     return () => { document.body.style.overflow = "auto"; };
   }, [selectedNews, isAllNewsOpen]);
+
+  useEffect(() => {
+    if (selectedNews) {
+      if (modalContentRef.current) {
+        modalContentRef.current.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+      
+      if (scrollableAreaRef.current) {
+        scrollableAreaRef.current.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [selectedNews]);
 
   return (
     <NewsSection id="news">
@@ -55,7 +97,7 @@ const News = () => {
       </NewsHeader>
 
       <NewsGrid>
-        {newsData.slice(0, 4).map((item) => (
+        {newsData.slice(0, visibleCardsCount).map((item) => (
           <NewsCard key={item.id}>
             <CardImage $src={newsImages[item.id] || item.image || ""} />
             <CardTitle>{item.title}</CardTitle>
@@ -73,7 +115,7 @@ const News = () => {
       {/* МОДАЛКА: ДЕТАЛЬНА НОВИНА */}
       {selectedNews && (
         <ModalOverlay onClick={() => setSelectedNews(null)}>
-          <ModalContent onClick={e => e.stopPropagation()}>
+          <ModalContent ref={modalContentRef} onClick={e => e.stopPropagation()}>
             <CloseModal onClick={() => setSelectedNews(null)} aria-label={t("close_modal")}>&#10005;</CloseModal>
             
             <LeftColumn>
@@ -101,7 +143,7 @@ const News = () => {
                   </ShareIcons>
                 </MetaRow>
               </ColumnHeader>
-              <ScrollableArea>
+              <ScrollableArea ref={scrollableAreaRef}>
                 <FullImage src={newsImages[selectedNews.id] || selectedNews.image || ""} alt={selectedNews.title} />
                 <FullText style={{ whiteSpace: 'pre-wrap' }}>{selectedNews.fullText}</FullText>
               </ScrollableArea>
