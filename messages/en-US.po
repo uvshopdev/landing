@@ -172,25 +172,25 @@ msgid "Loyalty.acc3_lvl1"
 msgstr "Tourist"
 
 msgid "Loyalty.acc3_lvl1_desc"
-msgstr "— start for everyone (up to 50 miles accumulated per year)"
+msgstr "— start for everyone (up to 500 miles accumulated per year)"
 
 msgid "Loyalty.acc3_lvl2"
 msgstr "Explorer"
 
 msgid "Loyalty.acc3_lvl2_desc"
-msgstr "— 50+ miles per year"
+msgstr "— 500+ miles per year"
 
 msgid "Loyalty.acc3_lvl3"
 msgstr "Traveler"
 
 msgid "Loyalty.acc3_lvl3_desc"
-msgstr "— 150+ miles per year"
+msgstr "— 1500+ miles per year"
 
 msgid "Loyalty.acc3_lvl4"
 msgstr "Travel Ambassador"
 
 msgid "Loyalty.acc3_lvl4_desc"
-msgstr "— 300+ miles per year"
+msgstr "— 3000+ miles per year"
 
 msgid "Loyalty.acc3_desc_bottom"
 msgstr "The higher the status, the more bonuses, benefits, and personalized offers."

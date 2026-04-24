@@ -172,25 +172,25 @@ msgid "Loyalty.acc3_lvl1"
 msgstr "Турист"
 
 msgid "Loyalty.acc3_lvl1_desc"
-msgstr "— старт для всіх (до 50 накопичених миль за рік)"
+msgstr "— старт для всіх (до 500 накопичених миль за рік)"
 
 msgid "Loyalty.acc3_lvl2"
 msgstr "Дослідник"
 
 msgid "Loyalty.acc3_lvl2_desc"
-msgstr "— 50+ миль за рік"
+msgstr "— 500+ миль за рік"
 
 msgid "Loyalty.acc3_lvl3"
 msgstr "Мандрівник"
 
 msgid "Loyalty.acc3_lvl3_desc"
-msgstr "— 150+ миль за рік"
+msgstr "— 1500+ миль за рік"
 
 msgid "Loyalty.acc3_lvl4"
 msgstr "Посол мандрів"
 
 msgid "Loyalty.acc3_lvl4_desc"
-msgstr "— 300+ миль за рік"
+msgstr "— 3000+ миль за рік"
 
 msgid "Loyalty.acc3_desc_bottom"
 msgstr "Чим вищий статус — тим більше бонусів, переваг і персональних пропозицій."
