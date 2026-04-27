@@ -96,7 +96,7 @@ msgid "About.fact3_text"
 msgstr "One shop in Podil, but thousands of journeys inside. Each of our guests discovers the world in a new way"
 
 msgid "About.fact4_title"
-msgstr "8000 clients"
+msgstr "8000+ clients"
 
 msgid "About.fact4_text"
 msgstr "More than eight thousand travelers have already tried our products, receiving warmth, authenticity, and small discoveries"
