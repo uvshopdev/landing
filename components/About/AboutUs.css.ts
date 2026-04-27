@@ -117,6 +117,12 @@ export const FactTitleGroup = styled.div`
   
   svg {
     color: ${({ theme }) => theme.colors.primary};
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 12px;
   }
 `;
 
@@ -126,6 +132,8 @@ export const FactTitle = styled.h4`
   font-size: 28px;
   color: ${({ theme }) => theme.colors.primary};
   margin: 0;
+  white-space: nowrap;
+  text-align: center;
 `;
 
 export const FactText = styled.p`
