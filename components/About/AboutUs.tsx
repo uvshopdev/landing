@@ -31,7 +31,7 @@ const AboutUs = () => {
         <TopSection>
           <ImageWrapper>
             <Image 
-              src="/about-store.png" 
+              src="/about-store0.png" 
               fill 
               alt={t('img_alt')} 
               style={{ objectFit: 'cover' }} 

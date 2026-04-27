@@ -37,9 +37,9 @@ const Loyalty = () => {
   };
 
   const galleryImages = [
-    { id: 0, src: "/loyalty-map.png", alt: t("gallery_map") },
-    { id: 1, src: "/loyalty-coffee.png", alt: t("gallery_coffee") },
-    { id: 2, src: "/loyalty-friends.png", alt: t("gallery_friends") }
+    { id: 0, src: "/loyalty-map1.png", alt: t("gallery_map") },
+    { id: 1, src: "/loyalty-coffee1.png", alt: t("gallery_coffee") },
+    { id: 2, src: "/loyalty-friends1.png", alt: t("gallery_friends") }
   ];
 
   const accordionData = [

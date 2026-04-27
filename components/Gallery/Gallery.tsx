@@ -22,7 +22,7 @@ const Gallery = () => {
   const t = useTranslations("Gallery");
   
   const slides = [
-    { id: 1, src: "/gallery-1.png", alt: t('alt_1') },
+    { id: 1, src: "/gallery-5.png", alt: t('alt_1') },
     { id: 2, src: "/gallery-2.png", alt: t('alt_2') },
     { id: 3, src: "/gallery-3.png", alt: t('alt_3') },
   ];

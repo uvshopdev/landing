@@ -42,7 +42,7 @@ const Hero = () => {
         </TextBlock>
         <ImageBlock>
           <Image 
-            src="/hero-collage.png" 
+            src="/hero-collage4.png" 
             fill 
             alt={t('img_alt')} 
             style={{ objectFit: 'contain', objectPosition: 'center' }} 
